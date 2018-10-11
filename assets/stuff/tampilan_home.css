@@ -1,0 +1,47 @@
+body{
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0; 
+        left: 0;
+        /*background: rgba(153, 205, 200, 0.9);*/
+        background: rgba(170, 231, 223, 0.9) ;
+        box-shadow: 10px 0px 3px rgba(0, 0, 0, 0.3);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+    .closebutton, .openbutton{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .sidenav{
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        /*background: rgba(153, 205, 200, 0.9);*/
+        background: rgba(170, 231, 223, 0.9) ;
+        box-shadow: 10px 0px 3px rgba(0, 0, 0, 0.3);
+        overflow-x: hidden;
+        padding-top: 60px;
+    }
+    .content{
+        margin-left: 250px;
+    }
+    .closebutton, .openbutton{
+        display: none;
+    }
+}
