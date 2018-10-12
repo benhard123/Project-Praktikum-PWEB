@@ -1,100 +1,101 @@
 body{
-    background-image: url("background.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: "Lato", sans-serif;
-}
-
-@media screen and (max-width: 400px) {
-    .whitebar{
-        z-index: 1;
-        position: fixed;
-        background-color: white;
-        height: 50px;
-        width :100% ;
-        left: 0;
-        top:0;
-    }
-    .sidebar{
-        margin-top: 50px;
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0; 
-        left: 0;
-        /*background: rgba(153, 205, 200, 0.9);*/
-        background: rgba(170, 231, 223, 0.9) ;
-        box-shadow: 10px 1px 3px rgba(0, 0, 0, 0.3);
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.5s;
-    }
-    .sidebar a{
-        display:block;
-        padding-left: 10px;
-        font-size: 20px;
-        text-decoration: none;
-        color: black;
-    }
-    .content{
-        margin-top: 50px;
-    }
-    .sidebar a:hover{
-        color:gray;
-    }
-    .sidebar .closebutton{
-        position: absolute;
-        top:0;
-        right: 10px;
-    }
-    .openbutton{
-        display: block;
-    }
+	background-image: url("background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "Lato", sans-serif;
 }
 
 @media screen and (min-width: 400px) {
-    .whitebar{
-        position: fixed;
-        background-color: white;
-        height: 50px;
-        width :100% ;
-        left: 0;
-        top:0;
-        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
-    }
-    .sidenav{
-        margin-top: 50px;
-        height: 100%;
-        width: 250px;
-        position: fixed;
-        top: 0; 
-        left: 0;
-        /*background: rgba(153, 205, 200, 0.9);*/
-        background: rgba(170, 231, 223, 0.9) ;
-        box-shadow: 10px 1px 3px rgba(0, 0, 0, 0.3);
-        overflow-x: hidden;
-        padding-top: 60px;
-    }
-    .content{
-        margin-top: 50px;
-        margin-left: 250px;
-    }
-    .openbutton{
-        display: none;
-    }
-    .sidebar a{
-        display:block;
-        padding-left: 10px;
-        font-size: 20px;
-        text-decoration: none;
-        color: black;
-    }
-    .sidebar a:hover{
-        color:gray;
-    }
-    .sidebar .closebutton{
-        display: none;
-    }
+	.whitebar{
+		position: fixed;
+		background-color: white;
+		height: 50px;
+		width :100% ;
+		left: 0;
+		top:0;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.sidenav{
+		margin-top: 50px;
+		height: 100%;
+		width: 250px;
+		position: fixed;
+		top: 0; 
+		left: 0;
+		/*background: rgba(153, 205, 200, 0.9);*/
+		background: rgba(170, 231, 223, 0.9) ;
+		box-shadow: 10px 1px 3px rgba(0, 0, 0, 0.3);
+		overflow-x: hidden;
+		padding-top: 60px;
+	}
+	.content{
+		margin-top: 70px;
+		margin-left: 250px;
+	}
+	.openbutton{
+		display: none;
+	}
+	.sidebar a{
+		display:block;
+		padding-left: 10px;
+		font-size: 20px;
+		text-decoration: none;
+		color: black;
+	}
+	.sidebar a:hover{
+		color:gray;
+	}
+	.sidebar .closebutton{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.whitebar{
+		z-index: 1;
+		position: fixed;
+		background-color: white;
+		height: 50px;
+		width :100% ;
+		left: 0;
+		top:0;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.sidebar{
+		margin-top: 50px;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0; 
+		left: 0;
+		/*background: rgba(153, 205, 200, 0.9);*/
+		background: rgba(170, 231, 223, 0.9) ;
+		box-shadow: 10px 1px 3px rgba(0, 0, 0, 0.3);
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+	.sidebar a{
+		display:block;
+		padding-left: 10px;
+		font-size: 20px;
+		text-decoration: none;
+		color: black;
+	}
+	.content{
+		margin-top: 70px;
+	}
+	.sidebar a:hover{
+		color:gray;
+	}
+	.sidebar .closebutton{
+		position: absolute;
+		top:0;
+		right: 10px;
+	}
+	.openbutton{
+		display: block;
+	}
 }
