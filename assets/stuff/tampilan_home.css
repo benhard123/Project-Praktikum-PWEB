@@ -6,7 +6,8 @@ body{
 	font-family: "Lato", sans-serif;
 }
 
-@media screen and (min-width: 400px) {
+/*tampilan dalam hp*/
+@media screen and (min-width: 401px) {
 	.whitebar{
 		position: fixed;
 		background-color: white;
@@ -32,7 +33,6 @@ body{
 	.content{
 		margin-top: 90px;
 		margin-left: 250px;
-		height: 100%;
 	}
 	.openbutton{
 		display: none;
@@ -61,6 +61,7 @@ body{
 	}
 }
 
+/*tampilan desktop*/
 @media screen and (max-width: 400px) {
 	.whitebar{
 		z-index: 1;
