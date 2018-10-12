@@ -6,7 +6,7 @@ body{
 	font-family: "Lato", sans-serif;
 }
 
-/*tampilan dalam hp*/
+/*tampilan desktop*/
 @media screen and (min-width: 401px) {
 	.whitebar{
 		position: fixed;
@@ -61,7 +61,7 @@ body{
 	}
 }
 
-/*tampilan desktop*/
+/*tampilan dalam hp*/
 @media screen and (max-width: 400px) {
 	.whitebar{
 		z-index: 1;
