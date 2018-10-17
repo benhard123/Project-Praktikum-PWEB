@@ -330,7 +330,7 @@
 				<path d="M0 588.19 L72.19 588.19" class="st8"/>
 			</g>
 		</g>
-		<g id="group74-95" transform="translate(758.018,-280.516)" v:mID="74" v:groupContext="group">
+		<g id="group74-95" transform="translate(722.835,-331.138)" v:mID="74" v:groupContext="group">
 			<v:userDefs>
 				<v:ud v:nameU="AttributeName" v:prompt="" v:val="VT4()"/>
 				<v:ud v:nameU="PrimaryKey" v:prompt="" v:val="VT0(0):26"/>
@@ -347,10 +347,10 @@
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
 				<v:ud v:nameU="AttributeName" v:prompt="" v:val="VT4(password)"/>
 				<v:ud v:nameU="PrimaryKey" v:prompt="" v:val="VT0(0):5"/>
-				<v:ud v:nameU="msvSDTargetIntersection" v:prompt="" v:val="VT7(PNT(-0.50959555246856,0.21754109173411)):40"/>
+				<v:ud v:nameU="msvSDTargetIntersection" v:prompt="" v:val="VT7(PNT(-0.094323233663005,-0.26228490810362)):40"/>
 				<v:ud v:nameU="Side" v:prompt="" v:val="VT0(3):26"/>
-				<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(-0.50959555246856,0.21754109173411)):40"/>
-				<v:ud v:nameU="WHBoxIntersection" v:prompt="" v:val="VT7(PNT(0,0.18574363449213)):40"/>
+				<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(-0.094323233663005,-0.26228490810362)):40"/>
+				<v:ud v:nameU="WHBoxIntersection" v:prompt="" v:val="VT7(PNT(0,0)):40"/>
 			</v:userDefs>
 			<title>Attribute.74</title>
 			<desc>password</desc>
@@ -358,13 +358,13 @@
 				<title>Sheet.75</title>
 				<v:userDefs>
 					<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(7.5MM,-14.4MM)):40"/>
-					<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(-0.50959555246856,0.21754109173411)):40"/>
+					<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(-0.094323233663005,-0.26228490810362)):40"/>
 				</v:userDefs>
 				<g id="shadow75-97" v:groupContext="shadow" v:shadowOffsetX="0.345598" v:shadowOffsetY="-1.97279" v:shadowType="1"
 						transform="matrix(1,0,0,1,0.345598,1.97279)" class="st1">
-					<path d="M30.78 583.82 L-36.69 579.61" class="st5"/>
+					<path d="M30.78 583.82 L-6.79 614.16" class="st5"/>
 				</g>
-				<path d="M30.78 583.82 L-36.69 579.61" class="st6"/>
+				<path d="M30.78 583.82 L-6.79 614.16" class="st6"/>
 			</g>
 			<g id="shape74-104" v:mID="74" v:groupContext="groupContent">
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -699,11 +699,11 @@
 		</g>
 		<g id="shape224-217" v:mID="224" v:groupContext="shape" transform="translate(639.123,-296.979)">
 			<title>Sheet.224</title>
-			<desc>M</desc>
+			<desc>1</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="7.08661" cy="585.283" width="14.18" height="19.9858"/>
 			<rect x="0" y="575.29" width="14.1732" height="19.9858" class="st9"/>
-			<text x="4" y="588.88" class="st10" v:langID="1057"><v:paragraph v:horizAlign="1"/><v:tabList/>M</text>		</g>
+			<text x="4.05" y="588.88" class="st10" v:langID="1057"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>		</g>
 		<g id="shape225-220" v:mID="225" v:groupContext="shape" transform="translate(527.244,-297.638)">
 			<title>Sheet.225</title>
 			<desc>M</desc>
@@ -725,50 +725,5 @@
 			<v:textRect cx="8.92788" cy="586.555" width="17.86" height="17.442"/>
 			<rect x="0" y="577.834" width="17.8558" height="17.442" class="st9"/>
 			<text x="5.89" y="590.15" class="st10" v:langID="1057"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>		</g>
-		<g id="group233-229" transform="translate(674.556,-332.654)" v:mID="233" v:groupContext="group">
-			<v:userDefs>
-				<v:ud v:nameU="AttributeName" v:prompt="" v:val="VT4()"/>
-				<v:ud v:nameU="PrimaryKey" v:prompt="" v:val="VT0(0):26"/>
-				<v:ud v:nameU="Multivalue" v:prompt="" v:val="VT0(0):26"/>
-				<v:ud v:nameU="Derived" v:prompt="" v:val="VT0(0):26"/>
-				<v:ud v:nameU="Required" v:prompt="" v:val="VT0(0):5"/>
-				<v:ud v:nameU="msvStructureType" v:prompt="" v:val="VT4(Callout)"/>
-				<v:ud v:nameU="msvSDTargetIntersection" v:prompt=""/>
-				<v:ud v:nameU="msvSDCalloutNoHighlight" v:prompt="" v:val="VT0(0):5"/>
-				<v:ud v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(Database;DbAttribute)"/>
-				<v:ud v:nameU="Side" v:prompt="" v:val="VT0(4):26"/>
-				<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(7.5MM,-14.4MM)):40"/>
-				<v:ud v:nameU="WHBoxIntersection" v:prompt="" v:val="VT7(PNT(12.115384615385MM,0MM)):40"/>
-				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
-				<v:ud v:nameU="AttributeName" v:prompt="" v:val="VT4(kodeTransaksi)"/>
-				<v:ud v:nameU="PrimaryKey" v:prompt="" v:val="VT0(1):5"/>
-				<v:ud v:nameU="msvSDTargetIntersection" v:prompt="" v:val="VT7(PNT(0.38275020834254,-0.28332964394309)):40"/>
-				<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(0.38275020834254,-0.28332964394309)):40"/>
-				<v:ud v:nameU="WHBoxIntersection" v:prompt="" v:val="VT7(PNT(0.46362686602203,0)):40"/>
-			</v:userDefs>
-			<title>Attribute.233</title>
-			<desc>kodeTransaksi</desc>
-			<g id="shape234-230" v:mID="234" v:groupContext="shape">
-				<title>Sheet.234</title>
-				<v:userDefs>
-					<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(7.5MM,-14.4MM)):40"/>
-					<v:ud v:nameU="LeaderEnd" v:prompt="" v:val="VT7(PNT(0.38275020834254,-0.28332964394309)):40"/>
-				</v:userDefs>
-				<g id="shadow234-231" v:groupContext="shadow" v:shadowOffsetX="0.345598" v:shadowOffsetY="-1.97279"
-						v:shadowType="1" transform="matrix(1,0,0,1,0.345598,1.97279)" class="st1">
-					<path d="M36.65 583.82 L27.56 615.68" class="st5"/>
-				</g>
-				<path d="M36.65 583.82 L27.56 615.68" class="st6"/>
-			</g>
-			<g id="shape233-238" v:mID="233" v:groupContext="groupContent">
-				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-				<v:textRect cx="36.6504" cy="583.823" width="73.31" height="22.9058"/>
-				<g id="shadow233-239" v:groupContext="shadow" v:shadowOffsetX="0.345598" v:shadowOffsetY="-1.97279"
-						v:shadowType="1" transform="matrix(1,0,0,1,0.345598,1.97279)" class="st1">
-					<path d="M73.3 583.82 A36.6504 11.4529 -180 1 0 0 583.82 A36.6504 11.4529 -180 1 0 73.3 583.82 Z" class="st2"/>
-				</g>
-				<path d="M73.3 583.82 A36.6504 11.4529 -180 1 0 0 583.82 A36.6504 11.4529 -180 1 0 73.3 583.82 Z" class="st3"/>
-				<text x="7.7" y="586.82" class="st4" v:langID="1057"><v:paragraph v:horizAlign="1"/><v:tabList/><tspan class="st7">kodeTransaksi</tspan></text>			</g>
-		</g>
 	</g>
 </svg>
