@@ -10,10 +10,9 @@ function closeNav(){
 function username(){
 	username1.style.fontSize="12px";
 	username1.style.zIndex="0";
-	if(username1.style.fontSize=="12px" && username1.style.zIndex=="0"){
-		username1.style.position="static";
-		username1.style.padding="0";
-	}
+	username1.style.position="static";
+	username1.style.padding="0";
+	
 }
 
 function checkFillUsername(){
@@ -28,10 +27,9 @@ function checkFillUsername(){
 function password(){
 	password1.style.fontSize="12px";
 	password1.style.zIndex="0";
-	if(password1.style.fontSize=="12px" && password1.style.zIndex=="0"){
-		password1.style.position="static";
-		password1.style.padding="0";
-	}
+	password1.style.position="static";
+	password1.style.padding="0";
+	
 }
 
 function checkFillPassword(){
