@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login</title>
+		<link rel="stylesheet" href="assets/stuff/tampilan_login.css">
+	</head>
+	<body>
+		<script src="assets/stuff/script.js"></script>
+		
+			<form name="login" action="javascript:void(0)" class="content">
+				<table>
+					<tr>
+						<td>
+							<span class="judul">SIGN IN</span>
+						</td>
+					</tr>
+					<tr>
+						<td id="isi1" style="width: 100%">
+							<span id="username1" class="isi">username</span>
+							<input id="username2" class="isian" type="text" name="pengguna" onfocus="username()" onblur="checkFillUsername()">
+						</td>
+					</tr>
+					<tr>
+						<td id="isi2" style="width: 100%">
+							<span id="password1" class="isi">password</span>
+							<input id="password2" class="isian" type="password" name="katakunci" onfocus="password()" onblur="checkFillPassword()">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#" class="lupa">Forgot your password?</a>
+							<input type="submit" name="login" value="Log In" class="tombol" style="margin-left: 65%">
+						</td>
+					</tr>
+					<tr>
+						<td class="noaccount">
+							<br><br><br>
+							Don't have an account? <a href="#">Sign Up</a>
+						</td>
+					</tr>					
+				</table>
+			</form>
+		
+	</body>
+</html>

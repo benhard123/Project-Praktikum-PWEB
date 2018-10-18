@@ -1,0 +1,104 @@
+body{
+	background-image: url("background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Helvetica;
+}
+
+a{
+	text-decoration: none;
+}
+
+.isi{
+	position: absolute;
+	z-index: -1;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+.content{
+	margin-top: 17%;
+	background-color: rgba(255,255,255,0.7);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.isian{
+	background-color: rgba(255,255,255,0);
+	position: relative;
+	width: 90%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+.lupa{
+	font-size: 12px; 
+}	
+
+.noaccount{
+	font-size: 13px; 
+}	
+
+.tombol{
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #337AB7;
+	border-width: 1px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #337AB7;
+	color: white;
+}
+
+.tombol:hover {
+	border-color: #286090;
+	background-color: #286090;
+}
+
+@media screen and (min-width: 1001px) {
+	.content{
+		margin-top: 13%;
+		width: 15%;
+		margin-left: 41%;
+	}
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+	.content{
+		width: 20%;
+		margin-left: 40%;
+	}
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 701px) {
+	.content{
+		width: 25%;
+		margin-left: 35%;
+	}
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 501px){
+	.content{
+		width: 30%;
+		margin-left: 30%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.content{
+		width: 40%;
+		margin-left: 20%;
+	}
+}
