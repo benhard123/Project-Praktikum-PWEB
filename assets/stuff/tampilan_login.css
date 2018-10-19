@@ -20,7 +20,7 @@ a{
 .content{
 	margin-top: 17%;
 	background-color: rgba(255,255,255,0.7);
-	padding: 20px;
+	padding: 30px;
 	border-radius: 10px;
 }
 
@@ -47,6 +47,7 @@ a{
 }	
 
 .tombol{
+	margin-left: 65%
 	border-radius: 10px;
 	border-style: solid;
 	border-color: #337AB7;
