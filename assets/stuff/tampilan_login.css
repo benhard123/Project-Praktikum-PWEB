@@ -96,10 +96,18 @@ a{
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 501px){
 
 	.content{
 		width: 40%;
 		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.content{
+		width: 50%;
+		margin-left: 15%;
 	}
 }
