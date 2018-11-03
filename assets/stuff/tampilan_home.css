@@ -37,32 +37,50 @@ body{
 }
 
 .isi{
-	margin-left: 20%;
+	margin-left: 10%;
 	margin-top: 10%;
-	width: 55%;
+	width: 75%;
 	padding: 30px;
 	word-wrap: break-word;
 	background: rgba(131, 167, 163, 0.6) ;
 	box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.3);
 }
-.sidebar a{
+
+.sidebar .menuSidebar{
 	display:block;
 	padding-left: 10px;
-	font-size: 20px;
+	font-size: 30px;
 	text-decoration: none;
 	color: black;
+	padding-bottom: 10px; 
+	padding-top: 10px; 
 }
+
 .sidebar a:hover{
-	color:gray;
+	background-color: rgba(133, 181, 174, 0.9);
 }
 
 .sidebar .closebutton{
 	position: absolute;
 	top:0;
 	right: 10px;
+	display:block;
+	padding-left: 10px;
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
 }
-.openbutton{
+
+.tombolBuka{
 	display: block;
+	height: 70px;
+	width: 70px;
+}
+
+.tombolMenuSidebar{
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
 }
 
 /*tampilan dalam hp*/
@@ -73,24 +91,30 @@ body{
 	.sidebar{
 		
 	}
-	.sidebar a{
-		
+	.sidebar .menuSidebar{
+		font-size: 20px;
+		padding-bottom: 5px; 
+		padding-top: 5px;
 	}
 	.content{
 		
 	}
 	.isi{
-		margin-left: 10%;
 		width: 65%;
 	}
 	.sidebar a:hover{
 		
 	}
 	.sidebar .closebutton{
+		font-size: 20px;
+	}
+	.tombolBuka{
 		
 	}
-	.openbutton{
-		
+
+	.tombolMenuSidebar{
+		height: 20px;
+		width: 20px;
 	}
 }
 
