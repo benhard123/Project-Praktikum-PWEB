@@ -1,5 +1,14 @@
-function openNav(){
-	sidebar.style.width="200px";
+let x = window.matchMedia("(max-width: 500px)");
+let y=x.matches;
+
+function openNav(y) {
+	console.log(y==true);
+	if (x.matches) { // If media query matches
+		sidebar.style.width="200px";
+	}
+	else {
+		sidebar.style.width="250px";
+	}
 }
 
 function closeNav(){
@@ -12,7 +21,6 @@ function username(){
 	username1.style.zIndex="0";
 	username1.style.position="static";
 	username1.style.padding="0";
-	
 }
 
 function checkFillUsername(){

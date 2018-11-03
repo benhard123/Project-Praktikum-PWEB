@@ -6,8 +6,96 @@ body{
 	font-family: "Lato", sans-serif;
 }
 
+.whitebar{
+	z-index: 1;
+	position: fixed;
+	background-color: white;
+	height: 70px;
+	width :100% ;
+	left: 0;
+	top:0;
+	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar{
+	margin-top: 70px;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0; 
+	left: 0;
+	/*background: rgba(153, 205, 200, 0.9);*/
+	background: rgba(170, 231, 223, 0.9) ;
+	box-shadow: 10px 1px 3px rgba(0, 0, 0, 0.3);
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+.content{
+	margin-top: 90px;
+}
+
+.isi{
+	margin-left: 20%;
+	margin-top: 10%;
+	width: 55%;
+	padding: 30px;
+	word-wrap: break-word;
+	background: rgba(131, 167, 163, 0.6) ;
+	box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.3);
+}
+.sidebar a{
+	display:block;
+	padding-left: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+.sidebar a:hover{
+	color:gray;
+}
+
+.sidebar .closebutton{
+	position: absolute;
+	top:0;
+	right: 10px;
+}
+.openbutton{
+	display: block;
+}
+
+/*tampilan dalam hp*/
+@media screen and (max-width: 500px) {
+	.whitebar{
+		height: 70px;
+	}
+	.sidebar{
+		
+	}
+	.sidebar a{
+		
+	}
+	.content{
+		
+	}
+	.isi{
+		margin-left: 10%;
+		width: 65%;
+	}
+	.sidebar a:hover{
+		
+	}
+	.sidebar .closebutton{
+		
+	}
+	.openbutton{
+		
+	}
+}
+
 /*tampilan desktop*/
-@media screen and (min-width: 501px) {
+/*@media screen and (min-width: 501px) {
 	.whitebar{
 		position: fixed;
 		background-color: white;
@@ -24,7 +112,7 @@ body{
 		position: fixed;
 		top: 0; 
 		left: 0;
-		/*background: rgba(153, 205, 200, 0.9);*/
+		/*background: rgba(153, 205, 200, 0.9);
 		background: rgba(170, 231, 223, 0.9) ;
 		box-shadow: 10px 1px 3px rgba(0, 0, 0, 0.3);
 		overflow-x: hidden;
@@ -59,63 +147,6 @@ body{
 	.sidebar .closebutton{
 		display: none;
 	}
-}
+}*/
 
-/*tampilan dalam hp*/
-@media screen and (max-width: 500px) {
-	.whitebar{
-		z-index: 1;
-		position: fixed;
-		background-color: white;
-		height: 70px;
-		width :100% ;
-		left: 0;
-		top:0;
-		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
-	}
-	.sidebar{
-		margin-top: 70px;
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 1;
-		top: 0; 
-		left: 0;
-		/*background: rgba(153, 205, 200, 0.9);*/
-		background: rgba(170, 231, 223, 0.9) ;
-		box-shadow: 10px 1px 3px rgba(0, 0, 0, 0.3);
-		overflow-x: hidden;
-		padding-top: 60px;
-		transition: 0.5s;
-	}
-	.sidebar a{
-		display:block;
-		padding-left: 10px;
-		font-size: 20px;
-		text-decoration: none;
-		color: black;
-	}
-	.content{
-		margin-top: 90px;
-	}
-	.isi{
-		margin-left: 10%;
-		margin-top: 10%;
-		width: 65%;
-		padding: 30px;
-		word-wrap: break-word;
-		background: rgba(131, 167, 163, 0.6) ;
-		box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.3);
-	}
-	.sidebar a:hover{
-		color:gray;
-	}
-	.sidebar .closebutton{
-		position: absolute;
-		top:0;
-		right: 10px;
-	}
-	.openbutton{
-		display: block;
-	}
-}
+
