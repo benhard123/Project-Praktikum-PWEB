@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login</title>
+		<link rel="stylesheet" href="assets/stuff/tampilan_registrasi.css">
+	</head>
+	<body>
+		<script src="assets/stuff/script.js"></script>
+		
+			<form name="registrasi" action="javascript:void(0)" class="content">
+				<table>
+					<tr>
+						<td>
+							<img class="logo" src="assets/stuff/Logo Sementara .jpg" alt="logo">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="judul">REGISTER YOUR ACCOUNT</span>
+						</td>
+					</tr>
+					<tr>
+						<td id="isi1">
+							<span id="username1" class="isi">Username</span>
+							<input id="username2" class="isian" type="text" name="pengguna" onfocus="username()" onblur="checkFillUsername()">
+						</td>
+					</tr>
+					<tr>
+						<td id="isi2">
+							<span id="name1" class="isi" style="margin-right: 10px">Names</span>
+							<input id="name2" class="isian" type="text" name="namaPengguna" onfocus="Name()" onblur="checkFillName()">
+						</td>
+					</tr>
+					<tr>
+						<td id="isi3">
+							<span id="email1" class="isi" style="margin-right: 15px">Email</span>
+							<input id="email2" class="isian" type="text" name="email" onfocus="Email()" onblur="checkFillEmail()">
+						</td>
+					</tr>
+					<tr>
+						<td id="isi4">
+							<span id="password1" class="isi">Password</span>
+							<input id="password2" class="isian" type="password" name="katakunci" onfocus="password()" onblur="checkFillPassword()">
+						</td>
+					</tr>
+					<tr>
+						<td id="isi5">
+							<span id="passwordC1" class="isi">Password Confirmation</span>
+							<input id="passwordC2" class="isian" type="password" name="katakunciPasti" onfocus="passwordC()" onblur="checkFillPasswordC()">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" name="registrasi" value="Register" class="tombol">
+						</td>
+					</tr>					
+				</table>
+			</form>
+		
+	</body>
+</html>

@@ -31,6 +31,38 @@ function checkFillUsername(){
 	}
 }
 
+function Name(){
+	name1.style.fontSize="12px";
+	name1.style.zIndex="0";
+	name1.style.position="static";
+	name1.style.padding="0";
+}
+
+function checkFillName(){
+	if(name2.value==""){
+		name1.style.fontSize="";
+		name1.style.zIndex="";
+		name1.style.position="";
+		name1.style.padding="";
+	}
+}
+
+function Email(){
+	email1.style.fontSize="12px";
+	email1.style.zIndex="0";
+	email1.style.position="static";
+	email1.style.padding="0";
+}
+
+function checkFillEmail(){
+	if(email2.value==""){
+		email1.style.fontSize="";
+		email1.style.zIndex="";
+		email1.style.position="";
+		email1.style.padding="";
+	}
+}
+
 function password(){
 	password1.style.fontSize="12px";
 	password1.style.zIndex="0";
@@ -45,5 +77,22 @@ function checkFillPassword(){
 		password1.style.zIndex="";
 		password1.style.position="";
 		password1.style.padding="";
+	}
+}
+
+function passwordC(){
+	passwordC1.style.fontSize="12px";
+	passwordC1.style.zIndex="0";
+	passwordC1.style.position="static";
+	passwordC1.style.padding="0";
+	
+}
+
+function checkFillPasswordC(){
+	if(passwordC2.value==""){
+		passwordC1.style.fontSize="";
+		passwordC1.style.zIndex="";
+		passwordC1.style.position="";
+		passwordC1.style.padding="";
 	}
 }
