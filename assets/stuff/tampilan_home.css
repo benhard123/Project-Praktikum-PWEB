@@ -34,6 +34,7 @@ body{
 }
 .content{
 	margin-top: 90px;
+	transition: 0.5s;
 }
 
 .isi{
@@ -56,8 +57,12 @@ body{
 	padding-top: 10px; 
 }
 
-.sidebar a:hover{
+.sidebar .menuSidebar:hover{
 	background-color: rgba(133, 181, 174, 0.9);
+}
+
+.sidebar .closebutton:hover{
+	color:gray;
 }
 
 .sidebar .closebutton{
@@ -72,7 +77,6 @@ body{
 }
 
 .tombolBuka{
-	display: block;
 	height: 70px;
 	width: 70px;
 }
@@ -83,13 +87,20 @@ body{
 	margin-right: 10px;
 }
 
+.logo {
+	width: 120px;
+	height: 44px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
 /*tampilan dalam hp*/
 @media screen and (max-width: 500px) {
 	.whitebar{
-		height: 70px;
+		height: 50px;
 	}
 	.sidebar{
-		
+		margin-top: 50px;
 	}
 	.sidebar .menuSidebar{
 		font-size: 20px;
@@ -102,14 +113,19 @@ body{
 	.isi{
 		width: 65%;
 	}
-	.sidebar a:hover{
-		
-	}
 	.sidebar .closebutton{
 		font-size: 20px;
 	}
 	.tombolBuka{
-		
+		height: 50px;
+		width: 50px;
+	}
+
+	.logo {
+		width: 60px;
+		height: 20px;
+		margin-left: 10px;
+		margin-bottom: 15px;
 	}
 
 	.tombolMenuSidebar{
