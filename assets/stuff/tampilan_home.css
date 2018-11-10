@@ -6,6 +6,20 @@ body{
 	font-family: "Lato", sans-serif;
 }
 
+a{
+	text-decoration: none;
+}
+
+.menuHeader{
+	top: 30px;
+	right: 5%;
+	position: absolute;
+}
+
+#tombolBeranda{
+	margin-right: 200px; 
+}
+
 .whitebar{
 	z-index: 1;
 	position: fixed;
@@ -72,7 +86,6 @@ body{
 	display:block;
 	padding-left: 10px;
 	font-size: 30px;
-	text-decoration: none;
 	color: black;
 }
 
@@ -94,13 +107,25 @@ body{
 	margin-bottom: 10px;
 }
 
+@media screen and (min-width: 501px) and (max-width: 700px){
+	#tombolBeranda{
+		margin-right: 100px; 
+	}
+}
+
 /*tampilan dalam hp*/
 @media screen and (max-width: 500px) {
+	.menuHeader{
+		top: 25px;
+	}
+	#tombolBeranda{
+		margin-right: 50px; 
+	}
 	.whitebar{
-		height: 50px;
+		height: 60px;
 	}
 	.sidebar{
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 	.sidebar .menuSidebar{
 		font-size: 20px;
@@ -117,13 +142,13 @@ body{
 		font-size: 20px;
 	}
 	.tombolBuka{
-		height: 50px;
-		width: 50px;
+		height: 60px;
+		width: 60px;
 	}
 
 	.logo {
-		width: 60px;
-		height: 20px;
+		width: 90px;
+		height: 30px;
 		margin-left: 10px;
 		margin-bottom: 15px;
 	}
