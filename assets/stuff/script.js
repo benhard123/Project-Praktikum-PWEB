@@ -1,4 +1,4 @@
-function openNav(y) {
+function openNav() {
 	var x = window.matchMedia("(max-width: 500px)");
 	if (x.matches) { // If media query matches
 		sidebar.style.width="200px";
