@@ -36,7 +36,7 @@
 					<tr>
 						<td class="noaccount">
 							<br><br><br>
-							Don't have an account? <a href="<?php echo site_url(); ?>/project/register/">Sign Up</a>
+							Don't have an account? <a href="<?php echo site_url(); ?>sadaya/register">Sign Up</a>
 						</td>
 					</tr>					
 				</table>

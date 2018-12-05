@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'ControllerWeb';
 $route['404_override'] = '';
-$route['project'] = 'ControllerWeb';
-$route['project/login'] = 'ControllerWeb/login';
-$route['project/register'] = 'ControllerWeb/register';
+$route['sadaya'] = 'ControllerWeb';
+$route['sadaya/login'] = 'ControllerWeb/login';
+$route['sadaya/register'] = 'ControllerWeb/register';
 $route['translate_uri_dashes'] = FALSE;
