@@ -11,7 +11,7 @@
 			<img class="tombolBuka" src="<?php echo base_url(); ?>/assets/stuff/Side bar tab.jpg" alt="tombol buka" onclick="openNav()">
 			<img class="logo" src="<?php echo base_url(); ?>/assets/stuff/Logo Sementara .jpg" alt="logo">
 			<span class="menuHeader">
-				<a id="tombolBeranda">Beranda</a>
+				<a id="tombolBeranda">Pesan sekarang!</a>
 				<a>Menu</a>
 			</span>
 		</div>
