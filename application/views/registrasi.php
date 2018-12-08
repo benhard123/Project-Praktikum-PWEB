@@ -8,7 +8,7 @@
 	<body>
 		<script src="<?php echo base_url(); ?>/assets/stuff/script.js"></script>
 		
-			<form name="registrasi" action="javascript:void(0)" class="content">
+			<form name="registrasi" action="javascript:void(0)" method ="POST" class="content">
 				<table>
 					<tr>
 						<td>

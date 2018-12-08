@@ -40,6 +40,11 @@ a{
 	transition: 0.3s;
 }
 
+.salah{
+	font-size: 12px; 
+	color: red;
+}
+
 .lupa{
 	font-size: 12px; 
 }	

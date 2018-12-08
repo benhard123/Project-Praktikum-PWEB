@@ -3,6 +3,7 @@
 
 		function __construct(){
 			parent::__construct();
+			$this->load->library('session');
 		}
 
 		public function index(){
@@ -10,7 +11,8 @@
 		}
 
 		public function login(){
-			$this->load->view('login');
+			$data['passwordsalah']='';
+			$this->load->view('login',$data);
 		}
 
 		public function register(){

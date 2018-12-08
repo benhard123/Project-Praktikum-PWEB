@@ -8,7 +8,7 @@
 	<body>
 		<script src="<?php echo base_url(); ?>/assets/stuff/script.js"></script>
 		
-			<form name="login" action="javascript:void(0)" class="content">
+			<form name="login" action="<?php echo site_url('c_login/login') ?>" method="POST" class="content">
 				<table>
 					<tr>
 						<td>
@@ -26,6 +26,9 @@
 							<span class="isi">password</span>
 							<input class="isian" type="password" name="katakunci" onfocus="test(password1)" onblur="checkFill(password1)">
 						</td>
+					</tr>
+					<tr>
+						<td><span class="salah"><?php echo $passwordsalah ?></span></td>
 					</tr>
 					<tr>
 						<td>
