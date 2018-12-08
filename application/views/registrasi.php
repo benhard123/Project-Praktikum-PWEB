@@ -8,7 +8,7 @@
 	<body>
 		<script src="<?php echo base_url(); ?>/assets/stuff/script.js"></script>
 		
-			<form name="registrasi" action="javascript:void(0)" method ="POST" class="content">
+			<form name="registrasi" action="<?php echo site_url('c_regist/regist'); ?>" method ="POST" class="content">
 				<table>
 					<tr>
 						<td>
@@ -35,7 +35,7 @@
 					<tr>
 						<td id="isi3">
 							<span class="isi">Email</span>
-							<input class="isian" type="text" name="email"onfocus="test(isi3)" onblur="checkFill(isi3)">
+							<input class="isian" type="text" name="email" onfocus="test(isi3)" onblur="checkFill(isi3)">
 						</td>
 					</tr>
 					<tr>
