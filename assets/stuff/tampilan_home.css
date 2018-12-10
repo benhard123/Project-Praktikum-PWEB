@@ -31,6 +31,18 @@ a{
 	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
 }
 
+.pesan{
+	position: fixed;
+	z-index: 1;
+	height: 0;
+	left: 0;
+	top:70px;
+	width: 100%;
+	background-color: white;
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+
 .sidebar{
 	margin-top: 70px;
 	height: 100%;
@@ -123,6 +135,10 @@ a{
 	}
 	.whitebar{
 		height: 60px;
+	}
+	.pesan{
+		top:60px;
+
 	}
 	.sidebar{
 		margin-top: 60px;

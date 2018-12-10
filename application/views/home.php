@@ -11,10 +11,11 @@
 			<img class="tombolBuka" src="<?php echo base_url(); ?>/assets/stuff/Side bar tab.jpg" alt="tombol buka" onclick="openNav()">
 			<img class="logo" src="<?php echo base_url(); ?>/assets/stuff/Logo Sementara .jpg" alt="logo">
 			<span class="menuHeader">
-				<a id="tombolBeranda">Pesan sekarang!</a>
+				<a id="tombolBeranda" onclick="homePesan();">Pesan sekarang!</a>
 				<a>Menu</a>
 			</span>
 		</div>
+		<div id="pesan" class="pesan" style=" height=""; ">ok-ok-ok</div>
 		<div id=sidebar class="sidebar sidenav">
 			<a href="javascript:void(0)" class="closebutton" onclick="closeNav()">x</a>
 			<a class="menuSidebar" href="#"><img class="tombolMenuSidebar" src="<?php echo base_url(); ?>/assets/stuff/gearwheels.png" alt="tombol Setting">bantuan</a>

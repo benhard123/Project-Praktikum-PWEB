@@ -9,7 +9,7 @@ class m_login extends CI_Model{
 
 	public function get($id = null)	{
 		if ($id != null){
-			$query = $this->db->query("SELECT * FROM `user` WHERE `username` COLLATE latin1_bin = '".$data['username']."'");
+			$query = $this->db->query("SELECT `username`, `names`, `email` FROM `user` WHERE `username` COLLATE latin1_bin = '".$data['username']."'");
 			return $query->result_array();
 		}
 

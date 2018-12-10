@@ -25,8 +25,8 @@
 				$this->load->view('login',$data2);
 			}
 			else{
-				$data['userdata'] = $this->m_login->get($data['username']);
-				$this->session->set_userdata('logged_in',$data);
+				$data3= $this->m_login->get($data['username']);
+				$this->session->set_userdata('logged_in',$data3);
 				redirect(base_url('sadaya'));
 			}			
 		}

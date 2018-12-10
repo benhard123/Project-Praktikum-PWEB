@@ -5,6 +5,7 @@ function openNav() {
 	}
 	else {
 		content.style.marginLeft="250px"
+		pesan.style.marginLeft="250px"
 		sidebar.style.width="250px";
 	}
 }
@@ -12,7 +13,23 @@ function openNav() {
 function closeNav(){
 	sidebar.style.width="0px";
 	sidebar.style.width="";
-	content.style.marginLeft=""
+	content.style.marginLeft="";
+	pesan.style.marginLeft="";
+}
+
+function homePesan(){
+	if(pesan.style.height==""){
+		var x = window.matchMedia("(max-width: 500px)");
+		if (x.matches) { // If media query matches
+			pesan.style.height="100px";
+		}
+		else {
+			pesan.style.height="150px";
+		}
+	}
+	else{
+		pesan.style.height="";
+	}
 }
 
 function test(x){
