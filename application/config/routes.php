@@ -53,5 +53,5 @@ $route['default_controller'] = 'ControllerWeb';
 $route['404_override'] = '';
 $route['sadaya'] = 'ControllerWeb';
 $route['sadaya/login'] = 'ControllerWeb/login';
-$route['sadaya/register'] = 'ControllerWeb/register';
+$route['sadaya/register'] = 'C_regist/register';
 $route['translate_uri_dashes'] = FALSE;

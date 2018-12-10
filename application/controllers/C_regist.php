@@ -4,6 +4,22 @@
 		function __construct(){
 			parent::__construct();
 			$this->load->model('m_regist');
+			$this->load->library('form_validation');
+			$this->load->helper(array('form'));
+		}
+
+		public function register(){
+			$this->form_validation->set_rules('pengguna','Username','required');
+			$this->form_validation->set_rules('namaPengguna','Names','required');
+			$this->form_validation->set_rules('email','Email','required');
+			$this->form_validation->set_rules('katakunci','Password','required');
+			$this->form_validation->set_rules('katakunciPasti','Password Confirmation','required');
+			if($this->form_validation->run() == FALSE){
+				$this->load->view('registrasi');
+			}
+			else{
+				$this->regist();
+			}
 		}
 
 		public function regist(){

@@ -8,7 +8,7 @@
 	<body>
 		<script src="<?php echo base_url(); ?>/assets/stuff/script.js"></script>
 		
-			<form name="registrasi" action="<?php echo site_url('C_regist/regist'); ?>" method ="POST" class="content">
+			<form name="registrasi" action="" method ="POST" class="content">
 				<table>
 					<tr>
 						<td>
@@ -18,6 +18,16 @@
 					<tr>
 						<td>
 							<span class="judul">REGISTER YOUR ACCOUNT</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<?php echo validation_errors(); ?>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<?php echo form_open('form'); ?>
 						</td>
 					</tr>
 					<tr>
