@@ -1,5 +1,5 @@
 <?php 
-	class c_regist extends CI_Controller {
+	class C_regist extends CI_Controller {
 
 		function __construct(){
 			parent::__construct();
