@@ -4,10 +4,12 @@
 		function __construct(){
 			parent::__construct();
 			$this->load->library('session');
+			$this->load->library('form_validation');
 		}
 
 		public function index(){
-			$this->load->view('home');
+			$data=$this->session->userdata('logged_in');
+			$this->load->view('home',$data);
 		}
 
 		public function login(){
@@ -16,6 +18,7 @@
 		}
 
 		public function register(){
+			//$this->form_validation->set_rules()
 			$this->load->view('registrasi');
 		}
 
