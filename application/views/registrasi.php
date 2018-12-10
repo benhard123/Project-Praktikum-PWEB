@@ -8,7 +8,7 @@
 	<body>
 		<script src="<?php echo base_url(); ?>/assets/stuff/script.js"></script>
 		
-			<form name="registrasi" action="<?php echo site_url('c_regist/regist'); ?>" method ="POST" class="content">
+			<form name="registrasi" action="<?php echo site_url('C_regist/regist'); ?>" method ="POST" class="content">
 				<table>
 					<tr>
 						<td>
