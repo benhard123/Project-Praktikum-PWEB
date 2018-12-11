@@ -8,7 +8,7 @@
 	<body>
 		<script src="<?php echo base_url(); ?>/assets/stuff/script.js"></script>
 		
-			<form name="login" action="<?php echo site_url('C_login/login') ?>" method="POST" class="content">
+			<form name="login" action="<?php echo site_url('C_login/login?from='.$dari.'') ?>" method="POST" class="content">
 				<table>
 					<tr>
 						<td>
