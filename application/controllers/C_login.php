@@ -30,10 +30,10 @@
 				$data3= $this->m_login->get($data['username']);
 				$data3['logged_in']=TRUE;
 				$this->session->set_userdata('logged_in',$data3);
-				if (strcmp($data['dari'],'home')==0)
-					redirect(base_url('sadaya'));
-				else
+				if (strcmp($data['dari'],'artikel')==0)
 					redirect(base_url("sadaya/{$data['dari']}"));
+				else
+					redirect(base_url("sadaya"));
 			}			
 		}
 		public function logout(){
@@ -42,10 +42,10 @@
 			$data['dari']=$this->input->get('from');
 			$this->session->set_userdata('logged_in',$data);
 			redirect(base_url('sadaya'));
-			if (strcmp($data['dari'],'home')==0)
-					redirect(base_url('sadaya'));
-				else
+			if (strcmp($data['dari'],'artikel')==0)
 					redirect(base_url("sadaya/{$data['dari']}"));
+				else
+					redirect(base_url("sadaya"));
 		}
 	}
 ?>
