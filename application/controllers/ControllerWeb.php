@@ -23,9 +23,15 @@
 		}
 
 		public function perjalanan(){
-			$this->load->model('M_perjalanan');
-			$data=$this->M_perjalanan->get($this->input->get('id'));
-			$this->load->view('HalamanPerjalanan',$data);
+			$login=$this->session->userdata('logged_in');
+			if ($login['logged_in']){
+				$this->load->model('M_perjalanan');
+				$data=$this->M_perjalanan->get($this->input->get('id'));
+				$this->load->view('HalamanPerjalanan',$data);
+			}
+			else{
+				redirect(base_url('sadaya/login?from=home'));
+			}
 		}
 	}
 ?>
