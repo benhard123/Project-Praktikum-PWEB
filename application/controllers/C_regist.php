@@ -15,7 +15,8 @@
 			$this->form_validation->set_rules('katakunci','Password','required');
 			$this->form_validation->set_rules('katakunciPasti','Password Confirmation','required');
 			if($this->form_validation->run() == FALSE){
-				$this->load->view('registrasi');
+				$data['passwordtidaksama']=$this->input->get('ok');
+				$this->load->view('registrasi',$data);
 			}
 			else{
 				$this->regist();
@@ -42,7 +43,7 @@
 				return;
 			}
 			if(strcmp($data['password'],$data['password2'])!=0){
-				redirect('/sadaya/register','refresh');
+				redirect('/sadaya/register?ok=password tidak sama','refresh');
 				return;
 			}
 

@@ -21,7 +21,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td>
+						<td class="validasi">
 							<?php echo validation_errors(); ?>
 						</td>
 					</tr>
@@ -52,6 +52,11 @@
 						<td id="isi4">
 							<span class="isi">Password</span>
 							<input class="isian" type="password" name="katakunci" onfocus="test(isi4)" onblur="checkFill(isi4)">
+						</td>
+					</tr>
+					<tr>
+						<td class="validasi">
+							<?php if($passwordtidaksama!='') echo "<p>".$passwordtidaksama."</p>"; ?>
 						</td>
 					</tr>
 					<tr>
