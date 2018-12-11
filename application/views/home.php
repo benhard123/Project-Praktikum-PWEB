@@ -15,7 +15,13 @@
 				<a>Menu</a>
 			</span>
 		</div>
-		<div id="pesan" class="pesan" style=" height=""; ">ok-ok-ok</div>
+		<div id="pesan" class="pesan" style=" height=""; ">
+			<a href="<?php echo base_url('sadaya/perjalanan?id=1');?>" id="tombolBeranda" style="color:black;" >Bandung</a>
+			<a href="<?php echo base_url('sadaya/perjalanan?id=2');?>" id="tombolBeranda" style="color:black;" >Jakarta</a>
+			<a href="<?php echo base_url('sadaya/perjalanan?id=3');?>" id="tombolBeranda" style="color:black;" >Yogyakarta</a>
+			<a href="<?php echo base_url('sadaya/perjalanan?id=4');?>" id="tombolBeranda" style="color:black;" >Bali</a>
+			<a href="<?php echo base_url('sadaya/perjalanan?id=5');?>" id="tombolBeranda" style="color:black;" >Lombok</a>
+		</div>
 		<div id=sidebar class="sidebar sidenav">
 			<a href="javascript:void(0)" class="closebutton" onclick="closeNav()">x</a>
 			<a class="menuSidebar" href="#"><img class="tombolMenuSidebar" src="<?php echo base_url(); ?>/assets/stuff/gearwheels.png" alt="tombol Setting">bantuan</a>

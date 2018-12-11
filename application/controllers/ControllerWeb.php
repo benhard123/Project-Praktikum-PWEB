@@ -22,5 +22,10 @@
 			$this->load->view('article',$data);
 		}
 
+		public function perjalanan(){
+			$this->load->model('M_perjalanan');
+			$data=$this->M_perjalanan->get($this->input->get('id'));
+			$this->load->view('HalamanPerjalanan',$data);
+		}
 	}
 ?>
