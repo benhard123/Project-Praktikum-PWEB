@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Home</title>
+		<title>Artikel</title>
 		<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/stuff/tampilan_home.css">
 	</head>
 	<body>
