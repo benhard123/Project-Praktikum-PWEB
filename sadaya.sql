@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Des 2018 pada 20.10
+-- Waktu pembuatan: 11 Des 2018 pada 23.19
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.2.12
 
@@ -21,6 +21,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `sadaya`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `transaksi`
+--
+
+CREATE TABLE `transaksi` (
+  `kodeTransaksi` int(10) NOT NULL,
+  `kodeTempat` int(10) NOT NULL,
+  `username` varchar(100) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
+  `jumlah_orang` int(5) NOT NULL,
+  `tanggal` date NOT NULL,
+  `nomor_telepon` varchar(14) NOT NULL,
+  `metodeBayar` varchar(100) NOT NULL,
+  `Nama` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `transaksi`
+--
+
+INSERT INTO `transaksi` (`kodeTransaksi`, `kodeTempat`, `username`, `jumlah_orang`, `tanggal`, `nomor_telepon`, `metodeBayar`, `Nama`) VALUES
+(2, 3, 'Admin', 3, '2018-12-13', '081324204649', 'Langsung', 'Benhard');
 
 -- --------------------------------------------------------
 
@@ -74,6 +98,14 @@ INSERT INTO `wisata` (`kodeTempat`, `namaTempat`, `linkGambar`, `hargaTiket`) VA
 --
 
 --
+-- Indeks untuk tabel `transaksi`
+--
+ALTER TABLE `transaksi`
+  ADD PRIMARY KEY (`kodeTransaksi`),
+  ADD KEY `kodeTempat` (`kodeTempat`),
+  ADD KEY `username` (`username`);
+
+--
 -- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
@@ -91,10 +123,27 @@ ALTER TABLE `wisata`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `transaksi`
+--
+ALTER TABLE `transaksi`
+  MODIFY `kodeTransaksi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT untuk tabel `wisata`
 --
 ALTER TABLE `wisata`
   MODIFY `kodeTempat` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+--
+
+--
+-- Ketidakleluasaan untuk tabel `transaksi`
+--
+ALTER TABLE `transaksi`
+  ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`kodeTempat`) REFERENCES `wisata` (`kodeTempat`),
+  ADD CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`username`) REFERENCES `user` (`username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
