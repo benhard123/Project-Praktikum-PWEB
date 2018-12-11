@@ -8,7 +8,7 @@ class M_perjalanan extends CI_Model{
 	}
 
 	public function get($id)	{
-		$query = $this->db->query("SELECT `namaTempat`, `linkGambar`, `hargaTiket` FROM `wisata` WHERE `kodeTempat` = '".$id."'");
+		$query = $this->db->query("SELECT * FROM `wisata` WHERE `kodeTempat` = '".$id."'");
 		return $query->row_array();
 	}
 }

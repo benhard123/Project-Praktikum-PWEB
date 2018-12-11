@@ -8,6 +8,9 @@
 
 		public function index(){
 			$data=$this->session->userdata('logged_in');
+			if ($data==NULL){
+				$data['logged_in']=FALSE;
+			}
 			$this->load->view('home',$data);
 		}
 

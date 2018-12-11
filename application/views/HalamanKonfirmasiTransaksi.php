@@ -10,12 +10,12 @@
             <h5>Isikan dengan data diri pemesan</h5>
             <br>
             <table>
-                <form>
+                <form action="<?php echo base_url(); ?>C_transaksi/transaksi?id=<?php echo $idTempat; ?>&tanggal=<?php echo $tanggal; ?>&kuantitas=<?php echo $kuantitas; ?>" method="post">
                     <tr>
                         <td>Nama :</td>
                     </tr>
                     <tr>
-                        <td><input class="isian" type="text" name="namaLengkap"></td>
+                        <td><input class="isian" type="text" name="namaLengkap" value="<?php $Names?>"></td>
                     </tr>
                     <tr>
                         <td><br></td>

@@ -24,7 +24,7 @@
                 font-size: 35px;
                 color: chocolate;"> TERTARIK? PESAN SEKARANG!
             </div>
-            <form>
+            <form action="<?php echo base_url('C_transaksi/viewtransaksi?id='.$kodeTempat)?>" method ="POST">
                 <table>
                     <tr>
                         <th>TENTUKAN TANGGAL PERJALANAN ANDA</th>
