@@ -19,7 +19,11 @@
 		<div id=sidebar class="sidebar sidenav">
 			<a href="javascript:void(0)" class="closebutton" onclick="closeNav()">x</a>
 			<a class="menuSidebar" href="#"><img class="tombolMenuSidebar" src="<?php echo base_url(); ?>/assets/stuff/gearwheels.png" alt="tombol Setting">bantuan</a>
-			<a class="menuSidebar" href="#"><img class="tombolMenuSidebar" src="<?php echo base_url(); ?>/assets/stuff/log out.png" alt="tombol Setting">logout</a>
+			<?php if($logged_in){ ?>
+			<a class="menuSidebar" href="<?php echo base_url('sadaya/logout');?>"><img class="tombolMenuSidebar" src="<?php echo base_url(); ?>/assets/stuff/log out.png" alt="tombol Setting">logout</a>
+			<?php } else {?>
+			<a class="menuSidebar" href="<?php echo base_url('sadaya/login');?>"><img class="tombolMenuSidebar" src="<?php echo base_url(); ?>/assets/stuff/log out.png" alt="tombol Setting">login</a>
+			<?php } ?>
 		</div>
 			<div id="content" class="content">
 				<div class="isi">
