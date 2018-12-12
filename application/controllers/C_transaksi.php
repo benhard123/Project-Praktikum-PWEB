@@ -50,5 +50,12 @@
 			echo "<script>alert('Transaksi sudah terkonfirmasi');</script>";
 			redirect(base_url('sadaya'));
 		}
+
+		public function hapusTransaksi(){
+			$id=$this->input->get('id');
+			$this->load->model('M_Transaksi');
+			$this->M_Transaksi->hapusTransaksi($id);
+			redirect(base_url('sadaya'));
+		}
 	}
 ?>

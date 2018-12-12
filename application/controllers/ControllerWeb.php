@@ -8,12 +8,18 @@
 
 		public function index(){
 			$data=$this->session->userdata('logged_in');
+			$this->load->model('M_perjalanan');
 			if ($data==NULL){
 				$data['logged_in']=FALSE;
+				$data['perjalanan']=$this->M_perjalanan->get();
+				$this->load->view('home',$data);
 			}
-			$this->load->model('M_perjalanan');
-			$data['perjalanan']=$this->M_perjalanan->get();
-			$this->load->view('home',$data);
+			else{
+				$data['perjalanan']=$this->M_perjalanan->get();
+				$this->load->model('M_Transaksi');
+				$data['transaksi']=$this->M_Transaksi->getTransaksi($data['username']);
+				$this->load->view('home2',$data);
+			}
 		}
 
 		public function login(){
