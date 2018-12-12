@@ -9,9 +9,9 @@
 		}
 
 		public function viewtransaksi(){
-			$this->form_validation->set_rules('namaLengkap','Nama','required');
+			/*$this->form_validation->set_rules('namaLengkap','Nama','required');
 			$this->form_validation->set_rules('nomorTelfon','Nomor HP','required');
-			$this->form_validation->set_rules('metode','Metode Pembayaran','required');
+			$this->form_validation->set_rules('metode','Metode Pembayaran','required');*/
 			$userdata=$this->session->userdata('logged_in');
 			$data=array(
 				'tanggal' => $this->input->post('tanggal'),
@@ -20,12 +20,18 @@
 				'Names' => $userdata['username']
 			);
 			
-			if ($this->form_validation->run() == FALSE){
+			//if ($this->form_validation->run() == FALSE){
 				$this->load->view('HalamanKonfirmasiTransaksi',$data);
-			}
-			else{
+			//}
+			/*else{
+				$data2=array(
+					'tanggal' => $data['tanggal'],
+					'kuantitas' => $data['kuantitas'],
+					'idTempat' => $data['idTempat']
+				);
+				$this->transaksi()->get($data);
 				redirect(base_url()."C_transaksi/transaksi?id=".$data['idTempat']."&tanggal=".$data['tanggal']."&kuantitas=".$data['kuantitas']);
-			}
+			}*/
 		}
 
 		public function transaksi(){

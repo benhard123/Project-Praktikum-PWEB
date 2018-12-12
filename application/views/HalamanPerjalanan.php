@@ -10,7 +10,7 @@
             margin-left: 445px;"> 
             <img src="<?php echo base_url(); ?>/assets/stuff/Logo FIX .jpg">
         </div>
-        <img src="<?php echo base_url($linkGambar); ?>" style="height: 100px; width: 1366px;">
+        <img src="<?php echo base_url($linkGambar); ?>">
         <div class="Kota" style="/*background-image: url('<?php echo $linkGambar; ?>'); background-repeat:no-repeat; background-size: 1366px 100px;*/">
             <?php echo $namaTempat; ?>
         </div>
