@@ -30,6 +30,7 @@
 			);
 			$this->load->model('M_Transaksi');
 			$this->M_Transaksi->masukanTransaksi($data);
+			redirect(base_url('sadaya'));
 		}
 	}
 ?>
