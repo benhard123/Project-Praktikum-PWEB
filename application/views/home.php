@@ -16,11 +16,8 @@
 			</span>
 		</div>
 		<div id="pesan" class="pesan" style=" height=""; ">
-			<a href="<?php echo base_url('sadaya/perjalanan?id=1');?>" id="tombolBeranda" style="color:black;" >Bandung</a>
-			<a href="<?php echo base_url('sadaya/perjalanan?id=2');?>" id="tombolBeranda" style="color:black;" >Jakarta</a>
-			<a href="<?php echo base_url('sadaya/perjalanan?id=3');?>" id="tombolBeranda" style="color:black;" >Yogyakarta</a>
-			<a href="<?php echo base_url('sadaya/perjalanan?id=4');?>" id="tombolBeranda" style="color:black;" >Bali</a>
-			<a href="<?php echo base_url('sadaya/perjalanan?id=5');?>" id="tombolBeranda" style="color:black;" >Lombok</a>
+			<?php foreach($perjalanan->result() as $pjl){ ?>
+			<a href="<?php echo base_url('sadaya/perjalanan?id='.$pjl->kodeTempat); ?>" id="tombolBeranda" style="color:black;" ><?php echo $pjl->namaTempat;} ?></a>
 		</div>
 		<div id=sidebar class="sidebar sidenav">
 			<a href="javascript:void(0)" class="closebutton" onclick="closeNav()">x</a>

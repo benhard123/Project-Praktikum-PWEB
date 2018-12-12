@@ -11,6 +11,8 @@
 			if ($data==NULL){
 				$data['logged_in']=FALSE;
 			}
+			$this->load->model('M_perjalanan');
+			$data['perjalanan']=$this->M_perjalanan->get();
 			$this->load->view('home',$data);
 		}
 
