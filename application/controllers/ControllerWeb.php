@@ -38,5 +38,8 @@
 				redirect(base_url('sadaya/login?from=home'));
 			}
 		}
+		public function edit(){
+			$this->load->view('edit');
+		}
 	}
 ?>
