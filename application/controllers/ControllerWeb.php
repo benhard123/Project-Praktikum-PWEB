@@ -14,6 +14,10 @@
 				$data['perjalanan']=$this->M_perjalanan->get();
 				$this->load->view('home',$data);
 			}
+			else if($data['logged_in']==FALSE){
+				$data['perjalanan']=$this->M_perjalanan->get();
+				$this->load->view('home',$data);
+			}
 			else{
 				$data['perjalanan']=$this->M_perjalanan->get();
 				$this->load->model('M_Transaksi');

@@ -34,25 +34,25 @@
 					<table>
 						<?php foreach($transaksi->result() as $trk){ ?>
 							<tr>
-								<td>
+								<td style="padding: 5px;">
 									<?php echo $trk->namaTempat; ?>
 								</td>
-								<td>
+								<td style="padding: 5px;">
 									<?php echo $trk->jumlah_orang; ?>
 								</td>
-								<td>
+								<td style="padding: 5px;">
 									<?php echo $trk->tanggal; ?>
 								</td>
-								<td>
+								<td style="padding: 5px;">
 									<?php echo $trk->nomor_telepon; ?>
 								</td>
-								<td>
+								<td style="padding: 5px;">
 									<?php echo $trk->metodeBayar; ?>
 								</td>
-								<td>
+								<td style="padding: 5px;">
 									<?php echo $trk->nama; ?>
 								</td>
-								<td>
+								<td style="padding: 5px;">
 									<a href="<?php echo base_url('C_transaksi/hapusTransaksi?id='.$trk->kodeTransaksi);?>" class="tombol" > Hapus </a>
 								</td>
 							</tr>
