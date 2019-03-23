@@ -19,7 +19,7 @@ class M_login extends CI_Model{
 
 	public function auth($data){
 		$password_query = md5($data['password']);
-		$query = $this->db->query("SELECT * FROM `user` WHERE `username` = '".$data['username']."' AND `password` COLLATE latin1_bin = '".$password_query."'");
+		$query = $this->db->query("SELECT * FROM `user` WHERE `username` = ".$this->db->escape($data['username'])." AND `password` COLLATE latin1_bin = '".$password_query."'");
 		$ok=$this->db->last_query();
 		return $query->result_array();
 	}
